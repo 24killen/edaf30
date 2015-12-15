@@ -49,3 +49,28 @@
 	<cstring>
 	<iostream>
 
+1449763036 source:h:\c++\labb3u4\dictionary.cpp
+	"Dictionary.h"
+	"Word.h"
+	<vector>
+	<iostream>
+	<cstring>
+
+1449762914 h:\c++\labb3u4\dictionary.h
+	<vector>
+	"Word.h"
+	<iostream>
+
+1449773298 h:\c++\labb3u4\word.h
+	<iostream>
+
+1449763010 source:h:\c++\labb3u4\main.cpp
+	<iostream>
+	"Word.h"
+	"Dictionary.h"
+
+1449772450 source:h:\c++\labb3u4\word.cpp
+	"Word.h"
+	<cstring>
+	<iostream>
+

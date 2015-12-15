@@ -2,7 +2,7 @@
 // For compilers that support precompilation, includes "wx/wx.h".
 #include <wx/wxprec.h>
 #ifndef WX_PRECOMP
-   #include <wx/wx.h>
+    #include <wx/wx.h>
 #endif
 
 #include "bricksdata.h"
@@ -44,7 +44,7 @@ MyFrame::MyFrame(const wxString& title, const wxPoint& pos, const wxSize& size)
     SetupMenuBar();
     CreatePanelItems();
     CreateStatusBar();
-    SetStatusText( "Wlecome to the 15 Puzzle!" );
+    SetStatusText( "Welcome to the 15 Puzzle!" );
 }
 
 void MyFrame::SetupMenuBar()

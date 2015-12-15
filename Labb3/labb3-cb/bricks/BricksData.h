@@ -3,8 +3,7 @@
 
 #include <vector>
 
-class BricksData
-{
+class BricksData{
     public:
         enum Movement {Up = -4, Left = -1, None = 0, Right = 1, Down = 4};
 
@@ -38,6 +37,8 @@ class BricksData
         bool Check();
 
     private:
+        int rad[4][4];
+
 };
 
 #endif // BRICKSDATA_H

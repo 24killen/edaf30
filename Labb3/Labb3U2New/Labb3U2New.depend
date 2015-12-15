@@ -1,15 +1,16 @@
 # depslib dependency file v1.0
-1449138270 source:h:\c++\labb3u2new\main.cpp
+1449760854 source:h:\c++\labb3u2new\main.cpp
 	<iostream>
 	"Mynt.h"
 	<array>
 
-1449137416 h:\c++\labb3u2new\mynt.h
-
-1449137892 source:h:\c++\labb3u2new\mynt.cpp
-	"Mynt.h"
+1449760950 h:\c++\labb3u2new\mynt.h
+	<random>
 	<ctime>
-	<cstdlib>
+	<iostream>
+
+1449760978 source:h:\c++\labb3u2new\mynt.cpp
+	"Mynt.h"
 
 1449155126 source:\\uwfpcluster03.uw.lu.se\dat13ahe$\documents\c++\labb3u2new\main.cpp
 	<iostream>

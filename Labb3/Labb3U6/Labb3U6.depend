@@ -10,3 +10,14 @@
 	"Personnummer.h"
 	<iostream>
 
+1449774662 source:h:\c++\labb3u6\main.cpp
+	<iostream>
+	"Personnummer.h"
+
+1449776732 h:\c++\labb3u6\personnummer.h
+	<iostream>
+
+1449780076 source:h:\c++\labb3u6\personnummer.cpp
+	"Personnummer.h"
+	<iostream>
+

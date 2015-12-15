@@ -2,5 +2,10 @@
 <CodeBlocks_workspace_file>
 	<Workspace title="Workspace">
 		<Project filename="bricks/bricks.cbp" />
+		<Project filename="../Labb2U14/Labb2U14.cbp" />
+		<Project filename="../Labb3U2New/Labb3U2New.cbp" />
+		<Project filename="../labb3u3/Labb3U3.cbp" />
+		<Project filename="../labb3u5/Labb3U5.cbp" />
+		<Project filename="../labb3u6/Labb3U6.cbp" />
 	</Workspace>
 </CodeBlocks_workspace_file>
