@@ -1,0 +1,51 @@
+# depslib dependency file v1.0
+1449766637 source:b:\dropbox\skola\c++\codeblocks\labb3\labb3u4\labb3u4\dictionary.cpp
+	"Dictionary.h"
+	"Word.h"
+	<vector>
+	<iostream>
+	<cstring>
+
+1449766515 b:\dropbox\skola\c++\codeblocks\labb3\labb3u4\labb3u4\dictionary.h
+	<vector>
+	"Word.h"
+	<iostream>
+
+1449776899 b:\dropbox\skola\c++\codeblocks\labb3\labb3u4\labb3u4\word.h
+	<iostream>
+
+1449766610 source:b:\dropbox\skola\c++\codeblocks\labb3\labb3u4\labb3u4\main.cpp
+	<iostream>
+	"Word.h"
+	"Dictionary.h"
+
+1449776051 source:b:\dropbox\skola\c++\codeblocks\labb3\labb3u4\labb3u4\word.cpp
+	"Word.h"
+	<cstring>
+	<iostream>
+
+1449766637 source:b:\dropbox\skola\c++\codeblocks\labb3\labb3u4\dictionary.cpp
+	"Dictionary.h"
+	"Word.h"
+	<vector>
+	<iostream>
+	<cstring>
+
+1449766515 b:\dropbox\skola\c++\codeblocks\labb3\labb3u4\dictionary.h
+	<vector>
+	"Word.h"
+	<iostream>
+
+1449776899 b:\dropbox\skola\c++\codeblocks\labb3\labb3u4\word.h
+	<iostream>
+
+1449766610 source:b:\dropbox\skola\c++\codeblocks\labb3\labb3u4\main.cpp
+	<iostream>
+	"Word.h"
+	"Dictionary.h"
+
+1449776051 source:b:\dropbox\skola\c++\codeblocks\labb3\labb3u4\word.cpp
+	"Word.h"
+	<cstring>
+	<iostream>
+

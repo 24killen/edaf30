@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1447080894 source:h:\c++\labb1u4\main.cpp
+	<iostream>
+	<limits.h>
+	<fstream>
+

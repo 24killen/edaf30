@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1447073935 source:h:\c++\labb1\main.cpp
+	<iostream>
+
+1447075149 source:h:\c++\labb1\main2.cpp
+	<iostream>
+	<cstdlib>
+
+1447075222 source:\\uwfpcluster03.uw.lu.se\dat13ahe$\documents\c++\labb1\main2.cpp
+	<iostream>
+	<cstdlib>
+
+1448289547 source:\\uwfpcluster03.uw.lu.se\dat13ahe$\documents\c++\labb1\main.cpp
+	<iostream>
+

@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1449157691 source:h:\c++\labb3u5\kvadrat.cpp
+	"Kvadrat.h"
+
+1449157465 h:\c++\labb3u5\kvadrat.h
+
+1449491574 source:\\uwfpcluster03.uw.lu.se\dat13ahe$\documents\c++\labb3u5\kvadrat.cpp
+	"Kvadrat.h"
+
+1449492805 \\uwfpcluster03.uw.lu.se\dat13ahe$\documents\c++\labb3u5\kvadrat.h
+
+1449492826 source:\\uwfpcluster03.uw.lu.se\dat13ahe$\documents\c++\labb3u5\main.cpp
+	<iostream>
+	"Kvadrat.h"
+
+1449492828 source:b:\dropbox\skola\c++\codeblocks\labb3\labb3u5\main.cpp
+	<iostream>
+	"Kvadrat.h"
+
+1449492806 b:\dropbox\skola\c++\codeblocks\labb3\labb3u5\kvadrat.h
+
+1449777296 source:b:\dropbox\skola\c++\codeblocks\labb3\labb3u5\kvadrat.cpp
+	"Kvadrat.h"
+

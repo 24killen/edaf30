@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1449778263 source:b:\dropbox\skola\c++\codeblocks\labb3\labb3u6\main.cpp
+	<iostream>
+	"Personnummer.h"
+
+1449780333 b:\dropbox\skola\c++\codeblocks\labb3\labb3u6\personnummer.h
+	<iostream>
+
+1449783502 source:b:\dropbox\skola\c++\codeblocks\labb3\labb3u6\personnummer.cpp
+	"Personnummer.h"
+	<iostream>
+

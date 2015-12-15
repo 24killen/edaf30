@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1449138270 source:h:\c++\labb3u2new\main.cpp
+	<iostream>
+	"Mynt.h"
+	<array>
+
+1449137416 h:\c++\labb3u2new\mynt.h
+
+1449137892 source:h:\c++\labb3u2new\mynt.cpp
+	"Mynt.h"
+	<ctime>
+	<cstdlib>
+
+1449155126 source:\\uwfpcluster03.uw.lu.se\dat13ahe$\documents\c++\labb3u2new\main.cpp
+	<iostream>
+	"Mynt.h"
+	<array>
+	<vector>
+	<unistd.h>
+
+1449153887 \\uwfpcluster03.uw.lu.se\dat13ahe$\documents\c++\labb3u2new\mynt.h
+
+1449154152 source:\\uwfpcluster03.uw.lu.se\dat13ahe$\documents\c++\labb3u2new\mynt.cpp
+	<iostream>
+	"Mynt.h"
+	<ctime>
+	<cstdlib>
+
+1449764484 source:b:\dropbox\skola\c++\codeblocks\labb3\labb3u2new\mynt.cpp
+	<iostream>
+	"Mynt.h"
+	<ctime>
+
+1449764550 b:\dropbox\skola\c++\codeblocks\labb3\labb3u2new\mynt.h
+	<random>
+	<ctime>
+	<iostream>
+
+1449764455 source:b:\dropbox\skola\c++\codeblocks\labb3\labb3u2new\main.cpp
+	<iostream>
+	"Mynt.h"
+	<array>
+

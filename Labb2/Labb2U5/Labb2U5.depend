@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1447679951 source:h:\c++\labb2u5\main.cpp
+	<iostream>
+	<tgmath.h>
+

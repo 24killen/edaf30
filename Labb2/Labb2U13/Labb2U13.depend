@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1447683986 source:h:\c++\labb2u13\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+
