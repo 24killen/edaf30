@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1450105756 source:h:\c++\labb4u1\circle.cpp
+	"Circle.h"
+
+1450106142 h:\c++\labb4u1\circle.h
+	"Cylinder.h"
+
+1450106105 h:\c++\labb4u1\cylinder.h
+	"Circle.h"
+
