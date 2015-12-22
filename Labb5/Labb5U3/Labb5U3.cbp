@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="../Labb5U3" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="../Labb5U3" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,6 +34,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="List.cpp" />
+		<Unit filename="List.h" />
+		<Unit filename="Node.cpp" />
+		<Unit filename="Node.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

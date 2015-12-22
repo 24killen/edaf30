@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1450796280 source:b:\dropbox\skola\c++\codeblocks\edaf30\labb5\labb5u3\node.cpp
+	"Node.h"
+
+1450796241 b:\dropbox\skola\c++\codeblocks\edaf30\labb5\labb5u3\node.h
+	<iostream>
+
+1450798163 source:b:\dropbox\skola\c++\codeblocks\edaf30\labb5\labb5u3\main.cpp
+	<iostream>
+	<List.h>
+	<random>
+	<time.h>
+
+1450797382 b:\dropbox\skola\c++\codeblocks\edaf30\labb5\labb5u3\list.h
+	"Node.h"
+
+1450797390 source:b:\dropbox\skola\c++\codeblocks\edaf30\labb5\labb5u3\list.cpp
+	"List.h"
+	<iostream>
+
