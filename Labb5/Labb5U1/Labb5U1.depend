@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1450748438 source:b:\dropbox\skola\c++\codeblocks\edaf30\labb5\labb5u1\kund.cpp
+	"Kund.h"
+
+1450748366 b:\dropbox\skola\c++\codeblocks\edaf30\labb5\labb5u1\kund.h
+	<random>
+	<time.h>
+
+1450750374 source:b:\dropbox\skola\c++\codeblocks\edaf30\labb5\labb5u1\main.cpp
+	<iostream>
+	"Kund.h"
+	<random>
+	<queue>
+	<math.h>
+

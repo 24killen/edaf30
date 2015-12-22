@@ -30,7 +30,6 @@ int main()
     double rest = 0;
     int servedCustomers = 0;
     int totalQueueTime = 0;
-    int TotalQueueLength = 0;
     queue<Kund> q;
 
     default_random_engine generator;
@@ -40,13 +39,11 @@ int main()
     for(int i = 0; i != minutes; i++){
         // How many customers this hour?
         if(i % 60 == 0){
-            // This can also be place outside the loop, then we just have to replace '60.0' to the variable 'minutes' bellow in the division.
-            // And also multiply 'nbrOfCustomers' with the total number of hours above in the poisson_distribution declaration.
             nbrThisHour = distribution(generator);
         }
         // How many customers this minute? If rest, save it to next minute.
         newCustomers = ((double)nbrThisHour/60.0)+rest;
-        rest = fmod(newCustomers, 1.0);
+        rest = fmod(newCustomers,1.0);
         newCustomers = (int)newCustomers;
 
         // Creates new customers and adds them to the last position in the queue.
@@ -57,24 +54,18 @@ int main()
 
         // If there is customers in the queue, serve the first one. If it's done in this minute, remove it from the queue.
         if(!q.empty()){
+           // cout << "Kund minut " << i << ": " << q.front().getBTid() << " -> ";
             if(q.front().isDone()){
-                totalQueueTime += (i-q.front().getATid());
+               // cout << q.front().getBTid()<< endl;
                 servedCustomers++;
                 q.pop();
+            }else{
+               // cout << q.front().getBTid()<< endl;
             }
         }
-        TotalQueueLength += q.size();
+
     }
-
-    double avgQueueTime = ((double)totalQueueTime/(double)servedCustomers);
-    double avgQueueLength = ((double)TotalQueueLength/(double)minutes);
-
-    cout << endl << endl << "// -------------- Statistics -------------- \\\\" << endl;
-    cout << "Total served customers: " << servedCustomers << " customers in " << hours << " hours." << endl;
-    cout << "Average of customers: " << (servedCustomers/hours) << " customers/hour." << endl;
-    cout << "Average queue time: " << avgQueueTime << " min." << endl;
-    cout << "Average queue length: " << avgQueueLength << " customers." << endl;
-    cout << "// ---------------------------------------- \\\\" << endl;
+    cout << servedCustomers;
 
     return 0;
 }
