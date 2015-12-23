@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1450810886 source:b:\dropbox\skola\c++\codeblocks\edaf30\labb5\labb5u5\main.cpp
+1450871764 source:b:\dropbox\skola\c++\codeblocks\edaf30\labb5\labb5u5\main.cpp
 	<iostream>
-	<Stack.h>
-
-1450810766 source:b:\dropbox\skola\c++\codeblocks\edaf30\labb5\labb5u5\stack.cpp
 	"Stack.h"
 
-1450805237 b:\dropbox\skola\c++\codeblocks\edaf30\labb5\labb5u5\stack.h
+1450871613 source:b:\dropbox\skola\c++\codeblocks\edaf30\labb5\labb5u5\stack.cpp
+	"Stack.h"
+
+1450871579 b:\dropbox\skola\c++\codeblocks\edaf30\labb5\labb5u5\stack.h
 	<stdexcept>
 	<iostream>
 

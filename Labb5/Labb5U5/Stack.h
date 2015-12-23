@@ -9,7 +9,7 @@ class Stack {
         int *data; // Data
         int num; // Antalet element i stacken
     public:
-        Stack(int mSize=100);
+        Stack(int max=100);
         ~Stack();
         void clear();
         bool empty() const;
