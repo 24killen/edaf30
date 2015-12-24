@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1450877024 source:b:\dropbox\skola\c++\codeblocks\edaf30\labb5\labb5u6\queue.cpp
+	"queue.h"
+
+1450875962 b:\dropbox\skola\c++\codeblocks\edaf30\labb5\labb5u6\queue.h
+	<stdexcept>
+	<iostream>
+
+1450957042 source:b:\dropbox\skola\c++\codeblocks\edaf30\labb5\labb5u6\main.cpp
+	<iostream>
+	"queue.h"
+
