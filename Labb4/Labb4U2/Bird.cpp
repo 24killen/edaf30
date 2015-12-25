@@ -1,8 +1,5 @@
 #include "Bird.h"
-
-Bird::Bird(){
-    //ctor
-}
+#include <iostream>
 
 Bird::~Bird(){
     //dtor
