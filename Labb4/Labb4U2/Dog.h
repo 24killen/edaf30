@@ -1,12 +1,14 @@
 #ifndef DOG_H
 #define DOG_H
+#include <iostream>
+#include "Pet.h"
 
-
-class Dog
-{
+using namespace std;
+class Dog : public Pet{
     public:
-        Dog();
+        Dog(string s) : Pet(s){}
         virtual ~Dog();
+        string speak(){return sound;}
     protected:
     private:
 };
