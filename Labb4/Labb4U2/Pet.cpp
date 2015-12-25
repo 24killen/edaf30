@@ -1,9 +1,5 @@
 #include "Pet.h"
 
-Pet::Pet(){
-    //ctor
-}
-
 Pet::~Pet(){
     //dtor
 }
