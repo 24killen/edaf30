@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="../Labb4U3" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="../Labb4U3" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,6 +34,18 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Badrum.cpp" />
+		<Unit filename="Badrum.h" />
+		<Unit filename="Bostad.cpp" />
+		<Unit filename="Bostad.h" />
+		<Unit filename="Kok.cpp" />
+		<Unit filename="Kok.h" />
+		<Unit filename="Rum.cpp" />
+		<Unit filename="Rum.h" />
+		<Unit filename="Sovrum.cpp" />
+		<Unit filename="Sovrum.h" />
+		<Unit filename="Vardagsrum.cpp" />
+		<Unit filename="Vardagsrum.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
