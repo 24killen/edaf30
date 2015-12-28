@@ -1,7 +1,7 @@
 #include "quicksort.h"
 
 template<class T>
-quicksort<T>::quicksort(const T a, int start, int stop){
+quicksort<T>::quicksort(const T& a, int start, int stop){
     if(stop-start<=1){
     }
     else{

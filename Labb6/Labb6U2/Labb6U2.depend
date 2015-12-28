@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
-1451225763 source:c:\users\artur\documents\data&programmering\edaf30\labb6\labb6u2\main.cpp
+1451230432 source:c:\users\artur\documents\data&programmering\edaf30\labb6\labb6u2\main.cpp
 	<iostream>
 	"quicksort.h"
 
-1451228671 c:\users\artur\documents\data&programmering\edaf30\labb6\labb6u2\quicksort.h
+1451230541 c:\users\artur\documents\data&programmering\edaf30\labb6\labb6u2\quicksort.h
 	<vector>
 
-1451228644 source:c:\users\artur\documents\data&programmering\edaf30\labb6\labb6u2\quicksort.cpp
+1451230385 source:c:\users\artur\documents\data&programmering\edaf30\labb6\labb6u2\quicksort.cpp
 	"quicksort.h"
 
