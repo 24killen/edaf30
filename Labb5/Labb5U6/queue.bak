@@ -30,11 +30,11 @@ bool Queue::full() const {
 
 // Hämta+avlägsna element, throw (length_error)
 int Queue::dequeue() throw (std::length_error) {
-
+    
     int ret = head;
     if (head == -1) {
         throw std::length_error("Queue::pop");
-    }
+    } 
     if (head == tail) {
         head = -1;
         tail = -1;
@@ -55,7 +55,7 @@ int Queue::dequeue() throw (std::length_error) {
 void Queue::enqueue(int value) throw (std::length_error) {
     if ((head == 0 && tail == maxSize -1) || (head == tail + 1)) {
         throw std::length_error("Queue::push");
-    }
+    } 
     if (head == -1) {
         head = 0;
         tail = 0;

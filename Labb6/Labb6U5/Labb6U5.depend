@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1451767856 source:c:\users\24\documents\github\edaf30\labb6\labb6u5\main.cpp
+	<iostream>
+	"Queue.h"
+
+1451767366 c:\users\24\documents\github\edaf30\labb6\labb6u5\queue.h
+	<stdexcept>
+
