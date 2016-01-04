@@ -1,6 +1,11 @@
 #include <iostream>
+#include <random>
+#include <ctime>
+#include "Konto.h"
+#include "Bank.h"
 
 using namespace std;
+
 
 // Prints the menu
 void printMenu(){
@@ -17,8 +22,11 @@ void printMenu(){
 }
 
 
+
 int main()
 {
+    Bank b;
+
     int val = -1;
     string dummy;
     while(val!=0){
@@ -28,14 +36,17 @@ int main()
                 case 0: // Avsluta programmet
                     break;
                 case 1: // Skapa konto
+                    b.skapaKonto();
                     break;
                 case 2: // Insattning av belopp till konto
+                    b.sattIn();
                     break;
                 case 3: // Uttag av belopp fran konto
                     break;
                 case 4: // Fraga om saldo for konto
                     break;
                 case 5: // Lista information for alla konton
+                    b.printInfoFranAlla();
                     break;
                 case 6: // Lista information for alla konton for en viss kontoinnehavare
                     break;

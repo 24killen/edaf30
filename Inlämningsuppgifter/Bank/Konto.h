@@ -1,16 +1,31 @@
 #ifndef KONTO_H
 #define KONTO_H
 #include <iostream>
+#include <vector>
+
+using std::string;
+using std::vector;
 
 class Konto
 {
     public:
-        Konto();
+        Konto(string namn, int nbr, char typ);
         virtual ~Konto();
+        void setKontoinnehavare(string namn);
+        string getKontoinnehavare();
+        void setKontonummer(int nbr);
+        int getKontonummer();
+        void setKontotyp(char typ);
+        char getKontotyp();
+        void sattIn(int belopp);
+        void taUt(int belopp);
+        int getSumma();
     protected:
     private:
-        std::string kontoinnehavare;
+        string kontoinnehavare;
         int kontonummer;
+        char kontotyp;
+        int summa;
 };
 
 #endif // KONTO_H
