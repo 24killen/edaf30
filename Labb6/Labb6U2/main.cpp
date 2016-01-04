@@ -4,11 +4,26 @@
 using namespace std;
 
 int main(){
+    // Test 1:
+    cout << "Test 1: " << endl;
     int nbrs[10] = {10,9,8,7,6,5,4,3,2,1};
-    quicksort<int> q = quicksort<int>(nbrs&, 0, 9);
-    for(int i=0;i<10;++i){
-        cout<<nbrs[i];
-    }
+    cout << "Osorterad: ";
+    printArray(nbrs,10);
+
+    quicksort(nbrs, 0, 9);
+
+    cout << "Sorterad: ";
+    printArray(nbrs,10);
+
+    cout << "---------------------" << endl;
+
+    // Test 2
+    cout << "Test 2: " << endl;
+    char str[] = {"This is a cool test"};
+    cout << "Osorterad: " << str << endl;
+    quicksort(str, 0, 18);
+    cout << "Sorterad: " << str << endl;
+
 
     return 0;
 }

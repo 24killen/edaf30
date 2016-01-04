@@ -9,3 +9,13 @@
 1451230385 source:c:\users\artur\documents\data&programmering\edaf30\labb6\labb6u2\quicksort.cpp
 	"quicksort.h"
 
+1451888651 source:c:\users\24\documents\github\edaf30\labb6\labb6u2\main.cpp
+	<iostream>
+	"quicksort.h"
+
+1451888586 c:\users\24\documents\github\edaf30\labb6\labb6u2\quicksort.h
+	<vector>
+	<iostream>
+
+1451885505 source:c:\users\24\documents\github\edaf30\labb6\labb6u2\quicksort.cpp
+
