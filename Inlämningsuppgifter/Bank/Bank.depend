@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1451891340 source:c:\users\24\documents\github\edaf30\inlämningsuppgifter\bank\main.cpp
+	<iostream>
+
+1451892584 source:c:\users\24\documents\github\edaf30\inlämningsuppgifter\bank\konto.cpp
+	"Konto.h"
+
+1451892579 c:\users\24\documents\github\edaf30\inlämningsuppgifter\bank\konto.h
+	<iostream>
+
