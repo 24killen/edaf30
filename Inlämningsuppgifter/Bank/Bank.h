@@ -6,7 +6,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include "Konto.h"
-#include "Filhantering.h"
+#include <fstream>
 
 using namespace std;
 
@@ -46,12 +46,14 @@ class Bank
         void modifieraKontoinnehavare(int kontonummer);
         void modifieraKontotyp(int kontonummer);
 
+
         void printInfo(int i);
         int kontonummerInput();
         int hamtaKontoIndex(int kontonummer);
         bool finnsKontot(int kontonummer);
         bool compareStringsIgnoreCase(string str1, string str2);
         void printTillgangligaTyper();
+        int hamtaStorstaKontonummer();
 };
 
 #endif // BANK_H

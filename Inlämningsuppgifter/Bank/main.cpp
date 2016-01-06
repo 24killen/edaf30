@@ -6,7 +6,6 @@
 
 using namespace std;
 
-
 // Prints the menu
 void printMenu(){
     cout << "---------------MENY---------------" << endl;

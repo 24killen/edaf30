@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1452034069 source:c:\users\24\documents\github\edaf30\inlämningsuppgifter\bank\main.cpp
+1452097225 source:c:\users\24\documents\github\edaf30\inlämningsuppgifter\bank\main.cpp
 	<iostream>
 	<random>
 	<ctime>
@@ -25,17 +25,17 @@
 	<vector>
 	"Konto.h"
 
-1452039986 source:c:\users\24\documents\github\edaf30\inlämningsuppgifter\bank\bank.cpp
+1452098012 source:c:\users\24\documents\github\edaf30\inlämningsuppgifter\bank\bank.cpp
 	"Bank.h"
 
-1452037719 c:\users\24\documents\github\edaf30\inlämningsuppgifter\bank\bank.h
+1452096931 c:\users\24\documents\github\edaf30\inlämningsuppgifter\bank\bank.h
 	<vector>
 	<string>
 	<bitset>
 	<iostream>
 	<stdlib.h>
 	"Konto.h"
-	"Filhantering.h"
+	<fstream>
 
 1452033781 c:\users\24\documents\github\edaf30\inlämningsuppgifter\bank\filhantering.h
 	<iostream>
