@@ -17,6 +17,7 @@ Bank::~Bank()
 
 }
 
+// En metod som används för att spara all data till en fil.
 void Bank::spara(){
     output.open(filnamn);
     for(int i = 0; i < antalKonton; i++){
@@ -28,6 +29,9 @@ void Bank::spara(){
     output.close();
 }
 
+// En metod som används för att ladda all data från fil till hela systemet.
+// Skapar konton och lägger in dessa i vektorn konton enligt den externa filens innehåll.
+// Använder sedan även en annan metod för att bestämma nästa tillgängliga kontonummer.
 void Bank::ladda(){
     ifstream fileExists(filnamn);
     if(fileExists){
@@ -92,7 +96,8 @@ void Bank::skapaKonto(){
     cout << "Skapande av nytt konto. Skriv in namn och kontotyp." << endl;
 
     cout << "Kontoinnehavare: ";
-    cin >> kontoinnehavare;
+    cin.ignore();
+    getline(cin,kontoinnehavare);
 
     while(!korrekt){
         printTillgangligaTyper();
@@ -121,6 +126,7 @@ void Bank::skapaKonto(string kontoinnehavare, char kontotyp){
     konton.push_back(k);
     antalKonton++;
     spara();
+    cout << "Kontot skapades med kontonummer " << (nastaKontonummer-1) << "." << endl;
 }
 
 // Publik metod som används för att lägga till ett belopp på ett visst konto.
@@ -193,20 +199,12 @@ void Bank::printInfoFranAlla(){
 // Hanterar inmatningen för att skriva ut vilka konton som ägs av samma kontoinnehavare.
 void Bank::printInfoFranAllaMedNamn(){
     string namn;
-    string dummy;
-    bool korrekt = false;
-    while(!korrekt){
-        cout << "Namn: ";
-        if(cin >> namn){
-            korrekt = true;
-            printInfoFranAllaMedNamn(namn);
-        }else{
-            cin.clear();
-            cin >> dummy;
-            cout << "Felaktig inmatning for namn, forsok igen." << endl;
-        }
-    }
+    cout << "Namn: ";
+    cin.ignore();
+    getline(cin,namn);
+    printInfoFranAllaMedNamn(namn);
 }
+
 // Skriver ut information på alla konton som ägs av samma kontoinnehavare.
 void Bank::printInfoFranAllaMedNamn(string namn){
     int antalKontonForNamn = 0;
@@ -299,20 +297,14 @@ void Bank::modifiera(){
 
 // En metod för att kontrollera och hantera ändringar av kontoinnehavaren för ett specifikt konto.
 void Bank::modifieraKontoinnehavare(int kontonummer){
-    bool korrekt = false;
-    string namn, dummy;
+    string namn;
     int index = hamtaKontoIndex(kontonummer);
-    while(!korrekt && kontonummer != 0){
+    if(kontonummer != 0){
         cout << "Nytt namn: ";
-        if(cin >> namn){
-            korrekt = true;
-            konton.at(index).setKontoinnehavare(namn);
-            spara();
-        }else{
-            cin.clear();
-            cin >> dummy;
-            cout << "Felaktig inmatning for andring av kontoinnehavare, forsok igen." << endl;
-        }
+        cin.ignore();
+        getline(cin,namn);
+        konton.at(index).setKontoinnehavare(namn);
+        spara();
     }
 }
 
@@ -363,9 +355,12 @@ int Bank::kontonummerInput(){
     bool korrekt = false;
     string dummy;
     cout << "Skriv in ditt kontonummer, avbryt med 0" << endl;
-    while(!korrekt && kontonummer != 0){
+    while(!korrekt){
         cout << "Kontonummer: ";
         if(cin >> kontonummer){
+            if(kontonummer == 0){
+                return kontonummer;
+            }
             if(finnsKontot(kontonummer)){
                 korrekt = true;
             }else{
