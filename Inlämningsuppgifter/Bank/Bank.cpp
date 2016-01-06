@@ -39,9 +39,10 @@ void Bank::ladda(){
         int kontonummer,saldo;
         char kontotyp;
         bool fortsatt = true;
-        while(!input.eof()){
+
+        while(input.good()){
             getline(input,text);
-           // if(text != ""){
+            if(text != ""){
                 kontonummer = atoi(text.c_str());
 
                 getline(input,text);
@@ -58,20 +59,27 @@ void Bank::ladda(){
                 antalKonton++;
 
                 konton.push_back(k);
-          ////  }else{
-          //      fortsatt = false;
-          //  }
-            input.close();
+            }else{
+                fortsatt = false;
+            }
+
         }
+        input.close();
         fileExists.close();
     }
-    int tmp = nastaKontonummer;
+    nastaKontonummer = hamtaStorstaKontonummer();
+}
+
+int Bank::hamtaStorstaKontonummer(){
+ int tmp = nastaKontonummer;
+ int highestNumber = tmp;
     for(int i = 0; i < antalKonton; i++){
         tmp = konton.at(i).getKontonummer()+1;
-        if(tmp > nastaKontonummer){
-            nastaKontonummer = tmp;
+        if(tmp > highestNumber){
+            highestNumber = tmp;
         }
     }
+    return highestNumber;
 }
 
 // Publik metod som hanterar inmatning och skapar
@@ -103,7 +111,6 @@ void Bank::skapaKonto(){
         }
     }
     skapaKonto(kontoinnehavare, kontotyp);
-
 }
 
 // Privat metod som används av den publika metoden med samma namn.

@@ -36,8 +36,6 @@
 		</Compiler>
 		<Unit filename="Bank.cpp" />
 		<Unit filename="Bank.h" />
-		<Unit filename="Filhantering.cpp" />
-		<Unit filename="Filhantering.h" />
 		<Unit filename="Konto.cpp" />
 		<Unit filename="Konto.h" />
 		<Unit filename="main.cpp" />
