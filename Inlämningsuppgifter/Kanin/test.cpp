@@ -1,15 +1,23 @@
+#include "test.h"
 #include <iostream>
-#include "RabbitRace.h"
+
 
 using namespace std;
 
-int main(){
+test::test(){
+    for(int j=0;j<3;++j){
+
+    int nbrOfRabbits = 1;
+    if(j==1)
+        nbrOfRabbits =999;
+    else if(j==2)
+        nbrOfRabbits ='A';
 
     bool goodEntry = false;
-    int nbrOfRabbits = 1;
+
     while(!goodEntry){
         cout<<"How many rabbits shall compete?";
-        cin>>nbrOfRabbits;
+//        cin>>nbrOfRabbits;
         if(nbrOfRabbits>0&&nbrOfRabbits<1000)
             goodEntry=true;
         else
@@ -31,5 +39,6 @@ int main(){
         cout<<"The race was closed after "<<counter<<" seconds.";
     else
         cout<<"Rabbit "<<result<<" has won!";
-    return 0;
+    cout<<nbrOfRabbits;
+}
 }
