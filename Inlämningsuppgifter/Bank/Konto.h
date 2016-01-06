@@ -19,13 +19,13 @@ class Konto
         char getKontotyp();
         void sattIn(int belopp);
         void taUt(int belopp);
-        int getSumma();
+        int getSaldo();
     protected:
     private:
         string kontoinnehavare;
         int kontonummer;
         char kontotyp;
-        int summa;
+        int saldo;
 };
 
 #endif // KONTO_H

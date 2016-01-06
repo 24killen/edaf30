@@ -9,7 +9,7 @@ Konto::Konto(string namn, int nbr, char typ)
     kontoinnehavare = namn;
     kontonummer = nbr;
     kontotyp = typ;
-    summa = 0;
+    saldo = 0;
 }
 
 Konto::~Konto()
@@ -42,13 +42,13 @@ char Konto::getKontotyp(){
 }
 
 void Konto::sattIn(int sattIn){
-    summa += sattIn;
+    saldo += sattIn;
 }
 
 void Konto::taUt(int taUt){
-    summa -= taUt;
+    saldo -= taUt;
 }
 
-int Konto::getSumma(){
-    return summa;
+int Konto::getSaldo(){
+    return saldo;
 }

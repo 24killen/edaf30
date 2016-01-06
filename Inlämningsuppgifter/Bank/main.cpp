@@ -25,7 +25,8 @@ void printMenu(){
 
 int main()
 {
-    Bank b;
+    string filnamn = "Banksystem.txt";
+    Bank b(filnamn);
 
     int val = -1;
     string dummy;
@@ -42,17 +43,22 @@ int main()
                     b.sattIn();
                     break;
                 case 3: // Uttag av belopp fran konto
+                    b.taUt();
                     break;
                 case 4: // Fraga om saldo for konto
+                    b.saldo();
                     break;
                 case 5: // Lista information for alla konton
                     b.printInfoFranAlla();
                     break;
                 case 6: // Lista information for alla konton for en viss kontoinnehavare
+                    b.printInfoFranAllaMedNamn();
                     break;
                 case 7: // Avsluta (ta bort) ett existerande konto
+                    b.taBort();
                     break;
                 case 8: // Modifiera ett existerande konto
+                    b.modifiera();
                     break;
                 default:// Övriga värden
                     cout << "Menyval " << val << " finns inte i menyn, forsok igen." << endl;
