@@ -6,7 +6,7 @@ using namespace std;
 int main(){
     // Test 1:
     cout << "Test 1: " << endl;
-    int nbrs[10] = {10,9,8,7,6,5,4,3,2,1};
+    int nbrs[10] = {9,10,8,2,6,5,4,3,7,1};
     cout << "Osorterad: ";
     printArray(nbrs,10);
 

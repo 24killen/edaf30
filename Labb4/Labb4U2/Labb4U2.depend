@@ -1,0 +1,38 @@
+# depslib dependency file v1.0
+1451057194 source:c:\users\artur\documents\data&programmering\edaf30\labb4\labb4u2\main.cpp
+	<iostream>
+	"Pet.h"
+	"Cat.h"
+	"Dog.h"
+	"Bird.h"
+	<vector>
+
+1451057194 c:\users\artur\documents\data&programmering\edaf30\labb4\labb4u2\pet.h
+	<string>
+
+1451057194 c:\users\artur\documents\data&programmering\edaf30\labb4\labb4u2\cat.h
+	<iostream>
+	"Pet.h"
+	<string>
+
+1451057194 c:\users\artur\documents\data&programmering\edaf30\labb4\labb4u2\dog.h
+	<iostream>
+	"Pet.h"
+
+1451057194 c:\users\artur\documents\data&programmering\edaf30\labb4\labb4u2\bird.h
+	<iostream>
+	"Pet.h"
+
+1451057194 source:c:\users\artur\documents\data&programmering\edaf30\labb4\labb4u2\bird.cpp
+	"Bird.h"
+	<iostream>
+
+1451057194 source:c:\users\artur\documents\data&programmering\edaf30\labb4\labb4u2\cat.cpp
+	"Cat.h"
+
+1451057194 source:c:\users\artur\documents\data&programmering\edaf30\labb4\labb4u2\dog.cpp
+	"Dog.h"
+
+1451057194 source:c:\users\artur\documents\data&programmering\edaf30\labb4\labb4u2\pet.cpp
+	"Pet.h"
+

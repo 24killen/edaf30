@@ -32,9 +32,6 @@ void RabbitRace::printStandings(){
         Rabbit* r = rabbits.at(i);
         for(int j=i+1;j<rabbits.size();++j){
             Rabbit* temp = rabbits.at(j);
-            if(r->getProgress()<temp->getProgress()){   //To keep the vector sorted
-                std::swap(r,temp);
-            }
         }
         cout<<"Rabbit "<<(r->getRabbitNbr())<<" is currently at "<<r->getProgress()<<endl;
     }

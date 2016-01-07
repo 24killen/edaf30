@@ -55,3 +55,59 @@
 1450886737 source:c:\users\artur\documents\data&programmering\c++\c++\labb4u3\vardagsrum.cpp
 	"Vardagsrum.h"
 
+1450887032 source:c:\users\artur\documents\data&programmering\edaf30\labb4\labb4u3\badrum.cpp
+	"Badrum.h"
+
+1450886931 c:\users\artur\documents\data&programmering\edaf30\labb4\labb4u3\badrum.h
+	"Rum.h"
+	<iostream>
+
+1450885230 c:\users\artur\documents\data&programmering\edaf30\labb4\labb4u3\rum.h
+	"Rum.h"
+	<iostream>
+
+1450886495 source:c:\users\artur\documents\data&programmering\edaf30\labb4\labb4u3\bostad.cpp
+	"Bostad.h"
+	"Sovrum.h"
+	"Badrum.h"
+	"Vardagsrum.h"
+	"Kok.h"
+	<vector>
+
+1450885348 c:\users\artur\documents\data&programmering\edaf30\labb4\labb4u3\bostad.h
+	"Rum.h"
+	"Sovrum.h"
+	"Kok.h"
+	"Vardagsrum.h"
+	"Badrum.h"
+	<iostream>
+	<vector>
+
+1450886172 c:\users\artur\documents\data&programmering\edaf30\labb4\labb4u3\sovrum.h
+	"Rum.h"
+	<iostream>
+
+1450886903 c:\users\artur\documents\data&programmering\edaf30\labb4\labb4u3\kok.h
+	"Rum.h"
+	<iostream>
+
+1450886183 c:\users\artur\documents\data&programmering\edaf30\labb4\labb4u3\vardagsrum.h
+	"Rum.h"
+
+1450886896 source:c:\users\artur\documents\data&programmering\edaf30\labb4\labb4u3\kok.cpp
+	"Kok.h"
+
+1450884322 source:c:\users\artur\documents\data&programmering\edaf30\labb4\labb4u3\main.cpp
+	<iostream>
+	<vector>
+	"Bostad.h"
+
+1450885517 source:c:\users\artur\documents\data&programmering\edaf30\labb4\labb4u3\rum.cpp
+	"Rum.h"
+
+1450886649 source:c:\users\artur\documents\data&programmering\edaf30\labb4\labb4u3\sovrum.cpp
+	"Sovrum.h"
+
+1450886737 source:c:\users\artur\documents\data&programmering\edaf30\labb4\labb4u3\vardagsrum.cpp
+	"Vardagsrum.h"
+

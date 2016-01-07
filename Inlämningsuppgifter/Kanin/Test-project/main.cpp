@@ -2,8 +2,7 @@
 #include "../test.h"
 using namespace std;
 
-int main()
-{
+int main(){
     test t;
     return 0;
 }

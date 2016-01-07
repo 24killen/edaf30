@@ -35,7 +35,7 @@ int Queue::dequeue() throw (std::length_error) {
     if (head == -1) {
         throw std::length_error("Queue::pop");
     }
-    if (head == tail) {
+    if (head == tail&&nbr_elem == 1) {
         head = -1;
         tail = -1;
     } else {

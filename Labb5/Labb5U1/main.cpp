@@ -71,7 +71,7 @@ int main()
 
     cout << endl << endl << "// -------------- Statistics -------------- \\\\" << endl;
     cout << "Total served customers: " << servedCustomers << " customers in " << hours << " hours." << endl;
-    cout << "Average of customers: " << (servedCustomers/hours) << " customers/hour." << endl;
+    cout << "Average of customers: " << (servedCustomers/(double)hours) << " customers/hour." << endl;
     cout << "Average queue time: " << avgQueueTime << " min." << endl;
     cout << "Average queue length: " << avgQueueLength << " customers." << endl;
     cout << "// ---------------------------------------- \\\\" << endl;

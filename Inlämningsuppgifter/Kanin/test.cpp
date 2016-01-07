@@ -7,21 +7,28 @@ using namespace std;
 test::test(){
     for(int j=0;j<3;++j){
 
-    int nbrOfRabbits = 1;
+    int nbrOfRabbits = 0;
+
     if(j==1)
-        nbrOfRabbits =999;
+        nbrOfRabbits = 999;
     else if(j==2)
         nbrOfRabbits ='A';
 
     bool goodEntry = false;
 
     while(!goodEntry){
-        cout<<"How many rabbits shall compete?";
+        cout<<"How many rabbits shall compete? Enter a number between 1-999: ";
 //        cin>>nbrOfRabbits;
         if(nbrOfRabbits>0&&nbrOfRabbits<1000)
             goodEntry=true;
-        else
-            nbrOfRabbits = 0;
+        else{
+            nbrOfRabbits = 1;
+            cout<<endl<<"Incorrect input. Number changed to defaultvalue: "<<nbrOfRabbits;
+        }
+
+    }
+    if(!goodEntry){
+
     }
     RabbitRace rr = RabbitRace(nbrOfRabbits);
 
@@ -39,6 +46,5 @@ test::test(){
         cout<<"The race was closed after "<<counter<<" seconds.";
     else
         cout<<"Rabbit "<<result<<" has won!";
-    cout<<nbrOfRabbits;
 }
 }

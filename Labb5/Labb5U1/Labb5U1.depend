@@ -13,3 +13,17 @@
 	<queue>
 	<math.h>
 
+1451056231 source:c:\users\artur\documents\data&programmering\edaf30\labb5\labb5u1\kund.cpp
+	"Kund.h"
+
+1451056231 c:\users\artur\documents\data&programmering\edaf30\labb5\labb5u1\kund.h
+	<random>
+	<time.h>
+
+1452163000 source:c:\users\artur\documents\data&programmering\edaf30\labb5\labb5u1\main.cpp
+	<iostream>
+	"Kund.h"
+	<random>
+	<queue>
+	<math.h>
+

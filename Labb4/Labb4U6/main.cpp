@@ -12,21 +12,21 @@ int main(){
     ifstream f1("namnlista.txt");
     ofstream f2("email.txt");
     f2.clear();
-    cout << "enter while" << endl;
+//    cout << "enter while" << endl;
     while(f1.get(c)){
             if(c!=' '&&c!='\n'){
                 namn.push_back(c);
-               cout << c;
+//               cout << c;
 //                ++counter;
                 }
             else if (c==' '){
                 namn.push_back('.');
 //                counter = 0;
                 // for-sats fr att lägga in bokstäverna i filen
-                cout << "enter for1" << endl;
+//                cout << "enter for1" << endl;
                 for(int i=0;i<namn.length();++i){
                     f2.put(namn.at(i));
-                    cout << namn.at(i);
+//                    cout << namn.at(i);
                 }
                 namn.clear();
                 continue;
@@ -34,10 +34,10 @@ int main(){
             else{
                 //nästa namn
                 namn.append("@gronkoping.se");
-                cout << "enter for2";
+//                cout << "enter for2";
                 for(int i=0;i<namn.length();++i){
                     f2.put(namn.at(i));
-                    cout << namn.at(i);
+//                    cout << namn.at(i);
                 }
                 f2.put('\n');
                 namn.clear();
