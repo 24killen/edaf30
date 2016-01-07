@@ -16,17 +16,15 @@ test::test(){
 
     bool goodEntry = false;
 
-    while(!goodEntry){
         cout<<"How many rabbits shall compete? Enter a number between 1-999: ";
 //        cin>>nbrOfRabbits;
         if(nbrOfRabbits>0&&nbrOfRabbits<1000)
             goodEntry=true;
         else{
             nbrOfRabbits = 1;
-            cout<<endl<<"Incorrect input. Number changed to defaultvalue: "<<nbrOfRabbits;
+            cout<<endl<<"Incorrect input. Number changed to value: "<<nbrOfRabbits<<endl;
         }
 
-    }
     if(!goodEntry){
 
     }
