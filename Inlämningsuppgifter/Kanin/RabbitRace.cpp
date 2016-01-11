@@ -1,4 +1,6 @@
 #include "RabbitRace.h"
+#include <algorithm>
+#include <climits>
 
 using namespace std;
 RabbitRace::RabbitRace(int nbrOfRabbits){
@@ -6,13 +8,13 @@ RabbitRace::RabbitRace(int nbrOfRabbits){
     completed = false;
     for(int i=0;i<nbrOfRabbits;++i){
         Track t = Track(1000);                      //The track is 10m/1000cm long.
-        Rabbit* r = new Rabbit(i+1,t);                     //Given a number and a track.
+        Rabbit* r = new Rabbit(i+1,t);              //Given a number and a track.
         rabbits.push_back(r);
     }
 }
 
 RabbitRace::~RabbitRace(){
-    //rabbits.clear();
+    delete &rabbits;
 }
 
 bool RabbitRace::advance(int nbrOfRounds){
@@ -28,12 +30,29 @@ bool RabbitRace::advance(int nbrOfRounds){
     return hasWon;
 }
 void RabbitRace::printStandings(){
+    vector<int> shown;
+
     for(int i=0;i<rabbits.size();++i){
-        Rabbit* r = rabbits.at(i);
-        for(int j=i+1;j<rabbits.size();++j){
+        pair<int, int> highest_nbr;
+        highest_nbr.first = -1;
+        highest_nbr.second = INT_MIN;
+
+        for(int j=0;j<rabbits.size();++j){
             Rabbit* temp = rabbits.at(j);
+            if(highest_nbr.second<(temp->getProgress())){
+                bool beenshown = false;
+                for(int k=0;k<shown.size();++k){
+                    if(shown.at(k) == temp->getRabbitNbr())
+                        beenshown = true;
+                }
+                if(!beenshown){
+                    highest_nbr.first = temp->getRabbitNbr();
+                    highest_nbr.second = temp->getProgress();
+                }
+            }
         }
-        cout<<"Rabbit "<<(r->getRabbitNbr())<<" is currently at "<<r->getProgress()<<endl;
+        shown.push_back(highest_nbr.first);
+        cout<<"Rabbit "<<highest_nbr.first<<" is at "<<highest_nbr.second<<endl;
     }
 }
 

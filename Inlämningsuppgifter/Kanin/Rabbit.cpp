@@ -19,18 +19,39 @@ Rabbit::Rabbit(int nbr, Track course){
 }
 
 Rabbit::~Rabbit(){
-
-    //dtor
+    delete &rabbitNbr;
+    delete &track;
+    delete &jumpForwardProbability;
+    delete &stayProbability;
+    delete &mini;
+    delete &maxi;
 }
 
-Rabbit::Rabbit(const Rabbit& other){
-    //copy ctor
+Rabbit::Rabbit(const Rabbit& rhs){
+    maxi = rhs.maxi;
+    mini = rhs.mini;
+    rabbitNbr = rhs.rabbitNbr;
+    stayProbability = rhs.stayProbability;
+    jumpForwardProbability = rhs.jumpForwardProbability;
+    track = rhs.track;
 }
 
 Rabbit& Rabbit::operator=(const Rabbit& rhs){
-    if (this == &rhs) return *this; // handle self assignment
-    //assignment operator
+    maxi = rhs.maxi;
+    mini = rhs.mini;
+    rabbitNbr = rhs.rabbitNbr;
+    stayProbability = rhs.stayProbability;
+    jumpForwardProbability = rhs.jumpForwardProbability;
+    track = rhs.track;
     return *this;
+}
+
+bool Rabbit::operator<(Rabbit& rhs){
+    return getProgress()<rhs.getProgress();
+}
+
+bool Rabbit::operator==(Rabbit& rhs){
+    return getProgress() == rhs.getProgress();
 }
 
 void Rabbit::setProbabilities(int stay, int jumpForward){

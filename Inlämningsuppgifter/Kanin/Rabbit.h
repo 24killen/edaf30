@@ -14,6 +14,8 @@ class Rabbit{
         virtual ~Rabbit();
         Rabbit(const Rabbit& other);
         Rabbit& operator=(const Rabbit& other);
+        bool operator<(Rabbit& other);
+        bool operator==(Rabbit& other);
         void setProbabilities(int stay, int jumpForward);
         void setMoveDistances(int minimum, int maximum);
         int getInterval();      //Returns the lenght that the rabbit made.

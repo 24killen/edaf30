@@ -30,11 +30,11 @@
 	"Track.h"
 	<iostream>
 
-1452160425 source:c:\users\artur\documents\data&programmering\edaf30\inlämningsuppgifter\kanin\main.cpp
+1452515366 source:c:\users\artur\documents\data&programmering\edaf30\inlämningsuppgifter\kanin\main.cpp
 	<iostream>
 	"RabbitRace.h"
 
-1452101163 c:\users\artur\documents\data&programmering\edaf30\inlämningsuppgifter\kanin\rabbitrace.h
+1452515762 c:\users\artur\documents\data&programmering\edaf30\inlämningsuppgifter\kanin\rabbitrace.h
 	<vector>
 	<string>
 	<sstream>
@@ -42,20 +42,22 @@
 	"Rabbit.h"
 	"Track.h"
 
-1452088937 c:\users\artur\documents\data&programmering\edaf30\inlämningsuppgifter\kanin\rabbit.h
+1452515246 c:\users\artur\documents\data&programmering\edaf30\inlämningsuppgifter\kanin\rabbit.h
 	"Track.h"
 	<string>
 	<ctime>
 	<cstdlib>
 	<iostream>
 
-1452094938 c:\users\artur\documents\data&programmering\edaf30\inlämningsuppgifter\kanin\track.h
+1452512754 c:\users\artur\documents\data&programmering\edaf30\inlämningsuppgifter\kanin\track.h
 
-1452089301 source:c:\users\artur\documents\data&programmering\edaf30\inlämningsuppgifter\kanin\rabbit.cpp
+1452520822 source:c:\users\artur\documents\data&programmering\edaf30\inlämningsuppgifter\kanin\rabbit.cpp
 	"Rabbit.h"
 
-1452158476 source:c:\users\artur\documents\data&programmering\edaf30\inlämningsuppgifter\kanin\rabbitrace.cpp
+1452522175 source:c:\users\artur\documents\data&programmering\edaf30\inlämningsuppgifter\kanin\rabbitrace.cpp
 	"RabbitRace.h"
+	<algorithm>
+	<climits>
 
 1452021495 source:c:\users\artur\documents\data&programmering\edaf30\inlämningsuppgifter\kanin\track.cpp
 	"Track.h"

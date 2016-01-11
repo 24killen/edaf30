@@ -16,7 +16,6 @@ class RabbitRace{
         bool advance(int nbrOfRounds);  //Moves all the rabbits nbrOfRounds times, returns false if noone has won.
         void printStandings();          //Skriver ut nuvarande ställning bland de tävlande.
         int getWinnerNbr();
-    protected:
     private:
         int winnerNbr;
         bool completed;
