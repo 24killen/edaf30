@@ -38,3 +38,11 @@ S
 Jack Bauer
 S
 24
+11
+Simon
+S
+0
+12
+Simpan
+S
+140

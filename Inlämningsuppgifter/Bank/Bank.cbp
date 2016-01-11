@@ -38,6 +38,8 @@
 		<Unit filename="Bank.h" />
 		<Unit filename="Konto.cpp" />
 		<Unit filename="Konto.h" />
+		<Unit filename="Test.cpp" />
+		<Unit filename="Test.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
