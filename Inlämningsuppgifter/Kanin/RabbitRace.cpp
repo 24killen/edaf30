@@ -14,12 +14,15 @@ RabbitRace::RabbitRace(int nbrOfRabbits){
 }
 
 RabbitRace::~RabbitRace(){
-    delete &rabbits;
+    for(unsigned int i=0;i<rabbits.size();++i)
+        delete rabbits.at(i);
+    delete &winnerNbr;
+    delete &completed;
 }
 
 bool RabbitRace::advance(int nbrOfRounds){
     bool hasWon = false;
-    for(int i=0;i<rabbits.size()&&!hasWon;++i){
+    for(unsigned int i=0;i<rabbits.size()&&!hasWon;++i){
         Rabbit* r = rabbits.at(i);
         r->movement();
         if((r->hasWon())){
@@ -32,16 +35,16 @@ bool RabbitRace::advance(int nbrOfRounds){
 void RabbitRace::printStandings(){
     vector<int> shown;
 
-    for(int i=0;i<rabbits.size();++i){
+    for(unsigned int i=0;i<rabbits.size();++i){
         pair<int, int> highest_nbr;
         highest_nbr.first = -1;
         highest_nbr.second = INT_MIN;
 
-        for(int j=0;j<rabbits.size();++j){
+        for(unsigned int j=0;j<rabbits.size();++j){
             Rabbit* temp = rabbits.at(j);
             if(highest_nbr.second<(temp->getProgress())){
                 bool beenshown = false;
-                for(int k=0;k<shown.size();++k){
+                for(unsigned int k=0;k<shown.size();++k){
                     if(shown.at(k) == temp->getRabbitNbr())
                         beenshown = true;
                 }

@@ -33,22 +33,24 @@
 1452109689 c:\users\24\documents\github\edaf30\inlämningsuppgifter\kanin\test.h
 	"RabbitRace.h"
 
-1452089301 source:c:\users\artur\documents\data&programmering\edaf30\inlämningsuppgifter\kanin\rabbit.cpp
+1452522449 source:c:\users\artur\documents\data&programmering\edaf30\inlämningsuppgifter\kanin\rabbit.cpp
 	"Rabbit.h"
 
-1452088937 c:\users\artur\documents\data&programmering\edaf30\inlämningsuppgifter\kanin\rabbit.h
+1452522449 c:\users\artur\documents\data&programmering\edaf30\inlämningsuppgifter\kanin\rabbit.h
 	"Track.h"
 	<string>
 	<ctime>
 	<cstdlib>
 	<iostream>
 
-1452094938 c:\users\artur\documents\data&programmering\edaf30\inlämningsuppgifter\kanin\track.h
+1452522449 c:\users\artur\documents\data&programmering\edaf30\inlämningsuppgifter\kanin\track.h
 
-1452158476 source:c:\users\artur\documents\data&programmering\edaf30\inlämningsuppgifter\kanin\rabbitrace.cpp
+1452522449 source:c:\users\artur\documents\data&programmering\edaf30\inlämningsuppgifter\kanin\rabbitrace.cpp
 	"RabbitRace.h"
+	<algorithm>
+	<climits>
 
-1452101163 c:\users\artur\documents\data&programmering\edaf30\inlämningsuppgifter\kanin\rabbitrace.h
+1452522449 c:\users\artur\documents\data&programmering\edaf30\inlämningsuppgifter\kanin\rabbitrace.h
 	<vector>
 	<string>
 	<sstream>
