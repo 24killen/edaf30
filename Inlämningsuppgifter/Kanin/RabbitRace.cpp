@@ -15,10 +15,10 @@ RabbitRace::RabbitRace(int nbrOfRabbits){
 
 RabbitRace::~RabbitRace(){
     int lenght = rabbits.size();
-    for(unsigned int i=0;i<lenght;++i)
+    for( int i=0;i<lenght;++i)
         delete rabbits.at(i);
-    delete &winnerNbr;
-    delete &completed;
+  //  delete &winnerNbr;
+ //   delete &completed;
 }
 
 bool RabbitRace::advance(int nbrOfRounds){

@@ -1,6 +1,5 @@
 #include <iostream>
 #include "RabbitRace.h"
-
 using namespace std;
 
 int main(){
@@ -10,9 +9,10 @@ int main(){
 
     cout<<"How many rabbits shall compete? Enter a number between 1-999: ";
     cin>>nbrOfRabbits;
-    if(!(nbrOfRabbits>0&&nbrOfRabbits<1000))
+    if(!(nbrOfRabbits>0&&nbrOfRabbits<1000)){
         nbrOfRabbits = 1;
         cout<<endl<<"Incorrect input. Number changed to value: "<<nbrOfRabbits<<endl;
+    }
 
     RabbitRace rr = RabbitRace(nbrOfRabbits);
 

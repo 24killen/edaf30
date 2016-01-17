@@ -2,7 +2,7 @@
 
 Rabbit::Rabbit(){       //Default
     rabbitNbr = 0;
-    track =Track(1000);
+    track = Track(1000);
     jumpForwardProbability = 40;
     stayProbability = 40;
     mini = 20;
@@ -19,12 +19,14 @@ Rabbit::Rabbit(int nbr, Track course){
 }
 
 Rabbit::~Rabbit(){
+    /*
     delete &rabbitNbr;
     delete &track;
     delete &jumpForwardProbability;
     delete &stayProbability;
     delete &mini;
     delete &maxi;
+    */
 }
 
 Rabbit::Rabbit(const Rabbit& rhs){

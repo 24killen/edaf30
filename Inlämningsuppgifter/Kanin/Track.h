@@ -6,7 +6,7 @@ class Track{
 
     public:
         Track(int trackLenght = 1000) {lenght = trackLenght; position = 0;}
-        virtual ~Track(){delete &position; delete &lenght;}
+        virtual ~Track(){/*delete &position; delete &lenght;*/}
         Track(const Track& other);
         Track& operator=(const Track& other);
         bool reachedGoal();
