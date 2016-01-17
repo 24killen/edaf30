@@ -30,6 +30,5 @@ int main(){
         cout<<"The race was closed after "<<counter<<" seconds.";
     else
         cout<<"Rabbit "<<result<<" has won!";
-    delete &rr;
     return 0;
 }

@@ -14,7 +14,8 @@ RabbitRace::RabbitRace(int nbrOfRabbits){
 }
 
 RabbitRace::~RabbitRace(){
-    for(unsigned int i=0;i<rabbits.size();++i)
+    int lenght = rabbits.size();
+    for(unsigned int i=0;i<lenght;++i)
         delete rabbits.at(i);
     delete &winnerNbr;
     delete &completed;
