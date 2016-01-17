@@ -10,7 +10,6 @@ class Track{
         Track(const Track& other);
         Track& operator=(const Track& other);
         bool reachedGoal();
-        int getLenght();
         int getCurrentPosition();
         void movement(int nbrOfSteps);
 

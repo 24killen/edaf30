@@ -4,7 +4,6 @@ using namespace std;
 
 int main(){
 
-    bool goodEntry = false;
     int nbrOfRabbits = 1;
 
     cout<<"How many rabbits shall compete? Enter a number between 1-999: ";

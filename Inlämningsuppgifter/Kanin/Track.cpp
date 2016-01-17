@@ -13,10 +13,6 @@ Track& Track::operator=(const Track& rhs){
     return *this;
 }
 
-int Track::getLenght(){
-    return lenght;
-}
-
 int Track::getCurrentPosition(){
     return position;
 }
