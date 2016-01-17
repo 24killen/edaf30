@@ -19,6 +19,8 @@ void Test::startaTest(){
 
     string filename = "Banksystem-test.txt";
     ifstream file;
+
+    /* En extra funktion som av någon anledning inte längre fungerar..
     file.open(filename);
     if(!file.fail()){
         cout << "Vill du ta bort test-filen " << filename  << "? (Y/n): " << endl;
@@ -29,6 +31,7 @@ void Test::startaTest(){
         }
     }
     file.close();
+    */
 
     Bank b(filename);
     vector<string> users = {"Bob","Kevin","Stuart"};
@@ -45,6 +48,7 @@ void Test::startaTest(){
 
     for(int i = 0; i < 10; i++){
         konto = b.skapaKonto(users.at(tmp),types.at(tmp2));
+        cout << "Kontoinnehavare: " << users.at(tmp) << endl;
         cout << "Nuvarande saldo (" << b.saldo(konto) << "kr)" << endl;
         rand_int = rand()%3;
         for(int j = 0; j < rand_int; j++){
@@ -59,10 +63,11 @@ void Test::startaTest(){
         }
         cout << "Nuvarande saldo (" << b.saldo(konto) << "kr)" << endl;
 
-
         if(rand()%4==0){
-            name = users.at(tmp).append("-modified");
+            name = users.at(tmp) + "-modified";
             b.modifieraKontoinnehavare(konto,(name));
+            cout << "Modifierade kontoinnehavare" << endl;
+            cout << "Ny kontoinnehavare: " << name << endl;
         }
 
         cout << "__________________________________________" << endl;
@@ -71,5 +76,12 @@ void Test::startaTest(){
         if(++tmp2 == types.size())
             tmp2 = 0;
     }
-    b.printInfoFranAlla();
+    cout << "Vill du skriva ut info for alla konton? (Y/n): " << endl;
+    string input;
+    getline(cin,input);
+    if(input == "y" ||input == "Y"){
+        b.printInfoFranAlla();
+    }
+
+   // b.printInfoFranAlla();
 }

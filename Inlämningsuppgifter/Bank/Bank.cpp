@@ -68,7 +68,7 @@ void Bank::ladda(){
     nastaKontonummer = hamtaStorstaKontonummer();
 }
 
-int Bank::hamtaStorstaKontonummer(){
+int const Bank::hamtaStorstaKontonummer(){
  int tmp = nastaKontonummer;
  int highestNumber = tmp;
     for(int i = 0; i < antalKonton; i++){
@@ -107,14 +107,14 @@ void Bank::taUt(int kontonummer, int belopp){
 }
 
 // Hämtar saldot för ett specifikt konto.
-int Bank::saldo(int kontonummer){
+int const Bank::saldo(int kontonummer){
     int index = hamtaKontoIndex(kontonummer);
     int saldo = konton.at(index).getSaldo();
     return saldo;
 }
 
 // Skriver ut all information om alla konton som finns i systemet.
-void Bank::printInfoFranAlla(){
+void const Bank::printInfoFranAlla(){
     cout << "Information fran alla konton: " << endl;
     cout << "__________________________________________" << endl;
     for(int i = 0; i < antalKonton; i++){
@@ -123,7 +123,7 @@ void Bank::printInfoFranAlla(){
 }
 
 // Skriver ut information på alla konton som ägs av samma kontoinnehavare.
-void Bank::printInfoFranAllaMedNamn(string namn){
+void const Bank::printInfoFranAllaMedNamn(string namn){
     int antalKontonForNamn = 0;
     for(int i = 0; i < antalKonton; i++){
         if(compareStringsIgnoreCase(namn, konton.at(i).getKontoinnehavare())){
@@ -161,7 +161,7 @@ void Bank::modifieraKontotyp(int kontonummer, char typ){
 }
 
 // Skriver ut informationen för ett konto med index "i" från vektorn "konton".
-void Bank::printInfo(int i){
+void const Bank::printInfo(int i){
     cout << "Kontoinnehavare: " << konton.at(i).getKontoinnehavare() << endl;
     cout << "Kontonummer: " << konton.at(i).getKontonummer() << endl;
     cout << "Kontotyp: " << konton.at(i).getKontotyp() << endl;
@@ -172,7 +172,7 @@ void Bank::printInfo(int i){
 // Letar upp på vilket index i vektorn koton där ett specifikt kontonummer finns.
 // Om kontonumret inte finns så returneras -1
 // Annars returneras index för det kontonumret.
-int Bank::hamtaKontoIndex(int kontonummer){
+int const Bank::hamtaKontoIndex(int kontonummer){
     for(int i = 0; i < antalKonton; i++){
         if(kontonummer == konton.at(i).getKontonummer()){
             return i;
@@ -183,7 +183,7 @@ int Bank::hamtaKontoIndex(int kontonummer){
 
 // Kontrollerar om ett inmatat kontonummer finns.
 // Returnerar true om det finns, och false om det inte finns.
-bool Bank::finnsKontot(int kontonummer){
+bool const Bank::finnsKontot(int kontonummer){
     if(hamtaKontoIndex(kontonummer) != -1){
         return true;
     }
@@ -194,7 +194,7 @@ bool Bank::finnsKontot(int kontonummer){
 // they are equal. Or false if they don't match.
 // This method is inspired by PiotrNycz on stackoverflow.
 // Source: http://stackoverflow.com/a/12568507
-bool Bank::compareStringsIgnoreCase(string str1, string str2){
+bool const Bank::compareStringsIgnoreCase(string str1, string str2){
     if(str1.length() == str2.length()){
         for(int i=0; i<str1.length(); i++){
             if(toupper(str1[i]) != toupper(str2[i])){
@@ -207,7 +207,7 @@ bool Bank::compareStringsIgnoreCase(string str1, string str2){
 }
 
 // En enkel hjälpmetod för att skriva ut tillgängliga kontotyper.
-void Bank::printTillgangligaTyper(){
+void const Bank::printTillgangligaTyper(){
         cout << endl;
         cout << "Tillgangliga typer:" << endl;
         cout << "S - Sparkonto" << endl;

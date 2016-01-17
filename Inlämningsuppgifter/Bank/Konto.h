@@ -12,14 +12,14 @@ class Konto
         Konto(string namn, int nbr, char typ);
         virtual ~Konto();
         void setKontoinnehavare(string namn);
-        string getKontoinnehavare();
+        string const getKontoinnehavare();
         void setKontonummer(int nbr);
-        int getKontonummer();
+        int const getKontonummer();
         void setKontotyp(char typ);
-        char getKontotyp();
+        char const getKontotyp();
         void sattIn(int belopp);
         void taUt(int belopp);
-        int getSaldo();
+        int const getSaldo();
     protected:
     private:
         string kontoinnehavare;

@@ -21,7 +21,7 @@ void Konto::setKontoinnehavare(string namn){
     kontoinnehavare = namn;
 }
 
-string Konto::getKontoinnehavare(){
+string const Konto::getKontoinnehavare(){
     return kontoinnehavare;
 }
 
@@ -29,7 +29,7 @@ void Konto::setKontonummer(int nbr){
     kontonummer = nbr;
 }
 
-int Konto::getKontonummer(){
+int const Konto::getKontonummer(){
     return kontonummer;
 }
 
@@ -37,7 +37,7 @@ void Konto::setKontotyp(char typ){
     kontotyp = typ;
 }
 
-char Konto::getKontotyp(){
+char const Konto::getKontotyp(){
     return kontotyp;
 }
 
@@ -49,6 +49,6 @@ void Konto::taUt(int taUt){
     saldo -= taUt;
 }
 
-int Konto::getSaldo(){
+int const Konto::getSaldo(){
     return saldo;
 }

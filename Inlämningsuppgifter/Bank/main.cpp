@@ -12,20 +12,20 @@ void printMenu();
 void skapaKonto(Bank& b);
 void sattIn(Bank& b);
 void taUt(Bank& b);
-void saldo(Bank& b);
-void printInfoFranAllaMedNamn(Bank& b);
+void const saldo(Bank& b);
+void const printInfoFranAllaMedNamn(Bank& b);
 void taBort(Bank& b);
 void modifiera(Bank& b);
 void modifieraKontoinnehavare(int kontonummer, Bank& b);
 void modifieraKontotyp(int kontonummer, Bank& b);
 
-int kontonummerInput(Bank& b);
-int beloppInput();
+int const kontonummerInput(Bank& b);
+int const beloppInput();
 
 
 int main()
 {
-    bool test = true;
+    bool test = false;
 
     if(test){
         Test t;
@@ -160,7 +160,7 @@ void taUt(Bank& b){
 }
 
 // Hanterar inmatning för att hämta saldot för ett specifikt konto.
-void saldo(Bank& b){
+void const saldo(Bank& b){
     int kontonummer = kontonummerInput(b);
     int saldo = 0;
     if(kontonummer != 0){
@@ -171,7 +171,7 @@ void saldo(Bank& b){
 
 
 // Hanterar inmatningen för att skriva ut vilka konton som ägs av samma kontoinnehavare.
-void printInfoFranAllaMedNamn(Bank& b){
+void const printInfoFranAllaMedNamn(Bank& b){
     string namn;
     cout << "Namn: ";
     cin.ignore();
@@ -288,7 +288,7 @@ void modifieraKontotyp(int kontonummer, Bank& b){
 // kontrollerar att kontonumret finns.
 // Returnerar det korrekt inmatade kontonumret
 // eller 0 om användaren väljer att avbryta.
-int kontonummerInput(Bank& b){
+int const kontonummerInput(Bank& b){
     int kontonummer;
     bool korrekt = false;
     string dummy;
@@ -316,7 +316,7 @@ int kontonummerInput(Bank& b){
 
 // Hanterar inmatningen av belopp-värdet.
 // Returnerar belopp-värdet.
-int beloppInput(){
+int const beloppInput(){
     int belopp;
     bool korrekt = false;
     string dummy;
